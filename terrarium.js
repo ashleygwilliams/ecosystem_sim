@@ -93,10 +93,14 @@ function elementFromCharacter(character) {
 
 function Terrrarium(plan) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   var grid = new Grid(plan[o].length, plan.length);
 =======
   var grid = new Grid(plan[o].length, plan.length));
 >>>>>>> 3e2f05e... the terrarium object
+=======
+  var grid = new Grid(plan[o].length, plan.length);
+>>>>>>> b8f74f2... animating life
   for (var y = 0; y < plan.length; y++) {
     var line = plan[y];
     for (var x = 0; x < line.length; x++) {
@@ -111,10 +115,14 @@ StupidBug.prototype.character = "o";
 
 function characterFromElement (element) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (element == undefined)
 =======
   if(element == undefined)
 >>>>>>> 3e2f05e... the terrarium object
+=======
+  if (element == undefined)
+>>>>>>> b8f74f2... animating life
     return " ";
   else
     return element.character;
@@ -132,10 +140,17 @@ Terrrarium.prototype.toString = function() {
   return characters.join("");
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Terrrarium.prototype.listActingCharacters = function() {
   var found = [];
   this.grid.each(function(point, value) {
+=======
+
+Terrrarium.prototype.listActingCharacters = function() {
+  var found = [];
+  this.grid.each(fucntion(point, value) {
+>>>>>>> b8f74f2... animating life
     if (value != undefined && value.act)
       found.push({object: value, point: point});
   });
@@ -144,7 +159,11 @@ Terrrarium.prototype.listActingCharacters = function() {
 
 Terrrarium.prototype.listSurroundings = function(center) {
   var result = {};
+<<<<<<< HEAD
   var grid = this.grid;
+=======
+  var grid == this.grid;
+>>>>>>> b8f74f2... animating life
   directions.each(function(name, direction) {
     var place = center.add(direction);
     if (grid.isInside(place))
@@ -170,6 +189,7 @@ Terrrarium.prototype.processCreature = function(creature, point) {
 
 Terrrarium.prototype.step = function() {
   forEach(this.listActingCharacters(), bind(this.processCreature, this));
+<<<<<<< HEAD
 }
 
 var terrarium = new Terrrarium(thePlan);
@@ -239,3 +259,6 @@ Grid.prototype.moveValue = function(from, to) {
 >>>>>>> 4a6c9b2... a bug's programming interface
 =======
 >>>>>>> 3e2f05e... the terrarium object
+=======
+}
+>>>>>>> b8f74f2... animating life
