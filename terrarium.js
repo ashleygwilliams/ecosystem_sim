@@ -65,6 +65,7 @@ Grid.prototype.each = function(action) {
       action(point, this.valueAt(point));
     }
   }
+<<<<<<< HEAD
 };
 
 function StupidBug() {};
@@ -214,3 +215,6 @@ Grid.prototype.moveValue = function(from, to) {
   this.setValueAt(from, undefined);
 }
 >>>>>>> 3268d64... representing the grid
+=======
+};
+>>>>>>> 9600f12... representing the grid - higher order functions
