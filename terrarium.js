@@ -75,6 +75,9 @@ function StupidBug() {};
 StupidBug.prototype.act = function(surroundings) {
   return {type: "move", direction: "s"};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e2f05e... the terrarium object
 }
 
 var wall = {};
@@ -89,7 +92,11 @@ function elementFromCharacter(character) {
 }
 
 function Terrrarium(plan) {
+<<<<<<< HEAD
   var grid = new Grid(plan[o].length, plan.length);
+=======
+  var grid = new Grid(plan[o].length, plan.length));
+>>>>>>> 3e2f05e... the terrarium object
   for (var y = 0; y < plan.length; y++) {
     var line = plan[y];
     for (var x = 0; x < line.length; x++) {
@@ -103,7 +110,11 @@ wall.character = "#";
 StupidBug.prototype.character = "o";
 
 function characterFromElement (element) {
+<<<<<<< HEAD
   if (element == undefined)
+=======
+  if(element == undefined)
+>>>>>>> 3e2f05e... the terrarium object
     return " ";
   else
     return element.character;
@@ -120,6 +131,7 @@ Terrrarium.prototype.toString = function() {
   });
   return characters.join("");
 };
+<<<<<<< HEAD
 
 Terrrarium.prototype.listActingCharacters = function() {
   var found = [];
@@ -225,3 +237,5 @@ Grid.prototype.moveValue = function(from, to) {
 =======
 }
 >>>>>>> 4a6c9b2... a bug's programming interface
+=======
+>>>>>>> 3e2f05e... the terrarium object
