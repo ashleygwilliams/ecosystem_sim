@@ -66,11 +66,15 @@ Grid.prototype.each = function(action) {
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a6c9b2... a bug's programming interface
 };
 
 function StupidBug() {};
 StupidBug.prototype.act = function(surroundings) {
   return {type: "move", direction: "s"};
+<<<<<<< HEAD
 }
 
 var wall = {};
@@ -218,3 +222,6 @@ Grid.prototype.moveValue = function(from, to) {
 =======
 };
 >>>>>>> 9600f12... representing the grid - higher order functions
+=======
+}
+>>>>>>> 4a6c9b2... a bug's programming interface
