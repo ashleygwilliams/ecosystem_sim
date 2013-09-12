@@ -149,8 +149,12 @@ Terrrarium.prototype.listActingCharacters = function() {
 
 Terrrarium.prototype.listActingCharacters = function() {
   var found = [];
+<<<<<<< HEAD
   this.grid.each(fucntion(point, value) {
 >>>>>>> b8f74f2... animating life
+=======
+  this.grid.each(function(point, value) {
+>>>>>>> 45e592b... it moves
     if (value != undefined && value.act)
       found.push({object: value, point: point});
   });
@@ -160,10 +164,14 @@ Terrrarium.prototype.listActingCharacters = function() {
 Terrrarium.prototype.listSurroundings = function(center) {
   var result = {};
 <<<<<<< HEAD
+<<<<<<< HEAD
   var grid = this.grid;
 =======
   var grid == this.grid;
 >>>>>>> b8f74f2... animating life
+=======
+  var grid = this.grid;
+>>>>>>> 45e592b... it moves
   directions.each(function(name, direction) {
     var place = center.add(direction);
     if (grid.isInside(place))
@@ -190,6 +198,9 @@ Terrrarium.prototype.processCreature = function(creature, point) {
 Terrrarium.prototype.step = function() {
   forEach(this.listActingCharacters(), bind(this.processCreature, this));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 45e592b... it moves
 }
 
 var terrarium = new Terrrarium(thePlan);
@@ -200,6 +211,7 @@ Point.prototype.toString = function() {
   return "(" + this.x + "," + this.y + ")";
 }
 
+<<<<<<< HEAD
 =======
 function Point(x,y){
   this.x = x;
@@ -262,3 +274,5 @@ Grid.prototype.moveValue = function(from, to) {
 =======
 }
 >>>>>>> b8f74f2... animating life
+=======
+>>>>>>> 45e592b... it moves
