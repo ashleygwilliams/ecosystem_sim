@@ -165,11 +165,52 @@ Point.prototype.toString = function() {
 
 =======
 function Point(x,y){
-	this.x = x;
-	this.y = y;
+  this.x = x;
+  this.y = y;
 }
 
 Point.prototype.add = function(other) {
+<<<<<<< HEAD
 	return new Point(this.x + other.x, this.y + other.y);
 }
 >>>>>>> 4a22786... points in space
+=======
+  return new Point(this.x + other.x, this.y + other.y);
+}
+
+var gridA = [["0,0", "1,0", "2,0"],
+            ["0,1", "1,1", "2,1"]];
+
+gridA[1][2];
+//=> "2,1"
+
+var gridB = ["0,0", "1,0", "2,0",
+            "0,1", "1,1", "2,1"];
+
+gridB[2 + 1 * 3];
+//=> "2,1"
+
+function Grid(width, height) {
+  this.width = width;
+  this.height = height;
+  this.cells = new Array(width * height);
+} 
+
+Grid.prototype.valueAt = function(point) {
+  return this.cells[point.y * this.width + point.x];
+};
+
+Grid.prototype.setValueAt = function(point, value) {
+  this.cells[point.y * this.width + point.x] = value;
+};
+
+Grid.prototype.isInside = function(point) {
+  return  point.x >= 0 && point.y >= 0 &&
+          point.x < this.width && point.y < this.height;
+};
+
+Grid.prototype.moveValue = function(from, to) {
+  this.setValueAt(to, this.valueAt(from));
+  this.setValueAt(from, undefined);
+}
+>>>>>>> 3268d64... representing the grid
